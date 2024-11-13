@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="165.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trapez Terulet-szamitas">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="AboutButton" layoutX="537.0" layoutY="361.0" mnemonicParsing="false" onAction="#onClick" text="About" />
+            <VBox layoutX="200.0" layoutY="120.0" prefHeight="80.0" prefWidth="50.0" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A oldal:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="B oldal:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="C oldal:" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="D oldal:" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="250.0" layoutY="127.0" prefHeight="120.0" prefWidth="140.0" spacing="2.0">
+               <children>
+                  <TextField fx:id="aSideInput" />
+                  <TextField fx:id="bSideInput" />
+                  <TextField fx:id="cSideInput" />
+                  <TextField fx:id="dSideInput" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="200.0" layoutY="261.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Eredmeny:" />
+                  <TextField fx:id="AreaResult" />
+               </children>
+            </HBox>
+            <Button fx:id="CalcButton" layoutX="269.0" layoutY="249.0" mnemonicParsing="false" onAction="#onClickStartCalc" text="Szamitas" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
